@@ -15,3 +15,9 @@ class Restaurant_typeModelTest(TestCase):
         new_desc = Restaurant_type(description='this is a test case')
         print(new_desc)
         self.assertIs(str(new_desc), 'this is a test case')
+
+    def test_rest_type_description (self):
+        new_desc = Restaurant_type(description='this is a test case2')
+        print(new_desc)
+        self.assertIs(str(new_desc), 'this is a test case2')
+
