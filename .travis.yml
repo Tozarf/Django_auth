@@ -2,11 +2,11 @@ language: python
 
 env:
   global:
-    - PSQL_USERNAME=samantha_guzman
-    - PSQL_PASS=pass
-    - PSQL_DBNAME=prueba
+    - PSQL_USERNAME=fausto_zaruma
+    - PSQL_PASS=fausto123*
+    - PSQL_DBNAME=fausto_zaruma_d
     - PSQL_HOST=localhost
-    - PSQL_PORT=5432
+    - PSQL_PORT=5508
 
 services:
   - postgresql
