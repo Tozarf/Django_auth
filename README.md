@@ -1,8 +1,11 @@
+[![Build Status](https://app.travis-ci.com/Tozarf/Django_auth.svg?branch=main)](https://app.travis-ci.com/Tozarf/Django_auth)
+
 # Django Authentication with JWT
 
 ## First steps
 
-1. Login into your database and delete all **_user or _users** tables with the command:
+1. Login into your database and delete all **\_user or \_users** tables with the command:
+
 ```
 psql -h localhost -p 55xx -U user_name db_name
 
@@ -11,33 +14,40 @@ psql -h localhost -p 55xx -U user_name db_name
 ```
 
 2. Make a new python environment with the command:
+
 ```
 pyenv virtualenv 3.10.0 new_env
 pyenv activate new_env
 eval "$(pyenv init --path)"
 ```
+
 3. Import your python dependencies with:
+
 ```
 pip install -r requirements.txt
 ```
 
 or instead:
+
 ```
 pip install -r requirements2.txt
 ```
 
 or:
+
 ```
 pip install django restframework djangorestframework-simplejwt PyJWT django-cors-headers
 ```
 
 4. Make your migrations:
+
 ```
 python manage.py makemigrations
 python manage.py migrate
 ```
 
 5. Run with your server:
+
 ```
 python manage.py runserver ip:port
 ```
@@ -45,6 +55,7 @@ python manage.py runserver ip:port
 ## Register
 
 Create a new user with a POST request to the following endpoint:
+
 > /api/register
 
 Using a **Content-Type: application/json** header with following JSON structure:
@@ -60,6 +71,7 @@ Using a **Content-Type: application/json** header with following JSON structure:
 ## Login
 
 Login with a POST request to the following endpoint:
+
 > /api/login
 
 Using a **Content-Type: application/json** header with following JSON structure:
@@ -71,10 +83,10 @@ Using a **Content-Type: application/json** header with following JSON structure:
 }
 ```
 
-
 ## Logout
 
 Login with a POST request to the following endpoint:
+
 > /api/logout
 
 Using a **Content-Type: application/json** header with following JSON structure:
