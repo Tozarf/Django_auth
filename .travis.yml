@@ -2,9 +2,9 @@ language: python
 
 env:
   global:
-    - PSQL_USERNAME=samantha_guzman
-    - PSQL_PASS=pass232
-    - PSQL_DBNAME=prueba232
+    - PSQL_USERNAME=fausto_zaruma
+    - PSQL_PASS=fausto123*
+    - PSQL_DBNAME=fausto_zaruma_d
     - PSQL_HOST=104.237.129.63
     - PSQL_PORT=5508
 
@@ -13,9 +13,9 @@ services:
 install:
   - pip install django djangorestframework djangorestframework-simplejwt PyJWT django-cors-headers psycopg2-binary
 before_script:
-  - psql -c "CREATE DATABASE prueba232;" -U postgres
-  - psql -c "CREATE USER samantha_guzman2 WITH PASSWORD 'pass232';" -U postgres
-  - psql -c "ALTER USER samantha_guzman CREATEDB;" -U postgres
+  # - psql -c "CREATE DATABASE prueba232;" -U postgres
+  # - psql -c "CREATE USER samantha_guzman2 WITH PASSWORD 'pass232';" -U postgres
+  # - psql -c "ALTER USER samantha_guzman CREATEDB;" -U postgres
 
 script:
   - python manage.py makemigrations
