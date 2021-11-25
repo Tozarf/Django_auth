@@ -5,7 +5,7 @@ env:
     - PSQL_USERNAME=fausto_zaruma
     - PSQL_PASS=fausto123*
     - PSQL_DBNAME=fausto_zaruma_d
-    - PSQL_HOST=localhost
+    - PSQL_HOST=104.237.129.63
     - PSQL_PORT=5508
 
 services:
